@@ -52,6 +52,25 @@
     ],
     "description": "Code snippet for a try/except/else/finally statement"
   },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "match ${1:expression}:",
+      "\tcase ${2:pattern}:",
+      "\t\t${3:code}",
+      "${4}"
+      ],
+    "description": "Code snippet for match/case statement"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${2:pattern}:",
+      "\t${3:code}",
+      "${4}"
+      ],
+    "description": "Code snippet for match/case statement"
+  },
   "def(class method)": {
     "prefix": "def class method",
     "body": ["def ${1:funcname}(self, ${2:parameter_list}):", "\t${3:pass}"],
