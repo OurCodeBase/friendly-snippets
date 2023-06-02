@@ -56,16 +56,16 @@
     "prefix": "match",
     "body": [
       "match ${1:expression}:",
-      "\t${4}"
+      "\t${2}"
       ],
     "description": "Code snippet for match/case statement"
   },
   "case": {
     "prefix": "case",
     "body": [
-      "case ${2:pattern}:",
-      "\t${3:code}",
-      "${4}"
+      "case ${1:pattern}:",
+      "\t${2:code}",
+      "${3}"
       ],
     "description": "Code snippet for match/case statement"
   },
